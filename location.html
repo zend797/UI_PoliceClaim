@@ -8,13 +8,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="stylesheet" type="text/css" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="styles/bootstrap-datetimepicker.min.css">
-
+    <script src="js/parsley.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 
-    <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="js/bootstrap-datetimepicker.min.js"></script>
 
 </head>
@@ -79,7 +79,7 @@
                 <button type="submit" class="btn btn-primary inline-btn" name="signup" value="Sign up" href="">Submit</button>
             </div>
         </div>
-        
+
     </form>
 
 
@@ -90,7 +90,7 @@
             format: 'LT'
         });
     });
-     
+
     $(document).ready(function() {
         // Initialize the date picker for the original due date field
         $('#dueDatePicker')
@@ -101,7 +101,7 @@
         // Revalidate the date field
         $('#taskForm').formValidation('revalidateField', $('#dueDatePicker').find('[name="dueDate[]"]'));
     });
-    
+
 </script>
 -->
 

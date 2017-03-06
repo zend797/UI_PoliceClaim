@@ -50,3 +50,7 @@ form {
 /*    vertical-align: middle;*/
     border-color: #a0a0a0;
 }
+
+.current {
+  display:block;
+}
