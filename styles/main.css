@@ -1,6 +1,7 @@
-html {
+html, body {
     font-family: Arial, sans-serif;
     width: 100%;
+    background-color: #fafafa;
 }
 .form-name {
     text-align: center;
@@ -40,15 +41,18 @@ form {
     margin-right: 0px !important;
 }
 
-.btn-back{
-    background-color: #ccc;
-/*    vertical-align: middle;*/
-    border-color: #a0a0a0;
+.btn-info{
+    margin-left: 15px;
+
+    vertical-align: middle;
 }
-.btn-back:hover {
-    background-color: #a0a0a0;
-/*    vertical-align: middle;*/
-    border-color: #a0a0a0;
+
+.btn-default {
+    border-color: #C7E5C7; 
+}
+.btn-default:hover {
+    background-color: #D8FFC3;
+    border-color: #b7d9b7; 
 }
 
 .current {
