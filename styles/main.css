@@ -11,15 +11,15 @@ html, body {
 */
     margin-bottom: 30px;
 }
-input:invalid {
+/*input:invalid {
     background-color: #ffdddd;
-}
+}*/
 form:invalid {
 /*    border: 2px solid #ffdddd;*/
 }
-input:valid {
+/*input:valid {
     background-color: #ddffdd;
-}
+}*
 form:valid {
 /*    border: 2px solid #ddffdd;*/
 /*    padding: 20px 1px 1px 1px;*/
@@ -48,13 +48,39 @@ form {
 }
 
 .btn-default {
-    border-color: #C7E5C7; 
+    border-color: #C7E5C7;
 }
 .btn-default:hover {
     background-color: #D8FFC3;
-    border-color: #b7d9b7; 
+    border-color: #b7d9b7;
 }
 
 .current {
   display:block;
 }
+
+.parsley-errors-list {
+
+  color:red;
+  list-style-type: none;
+}
+
+input.parsley-error
+    {
+      background-color: #F2DEDE !important;
+    }
+
+input.parsley-success
+    {
+      background-color: #ddffdd; !important;
+    }
+
+textarea.parsley-error
+    {
+      background-color: #F2DEDE !important;
+    }
+
+textarea.parsley-success
+    {
+      background-color: #ddffdd; !important;
+    }
