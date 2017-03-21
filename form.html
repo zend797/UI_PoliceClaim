@@ -1,5 +1,4 @@
-</html>
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html>
 
 <head>
@@ -21,176 +20,168 @@
 
 <body>
     <div class="form-name">
+        <!--<img src="img/logo.png" alt="">-->
         <h1>ONLINE REPORTING FORM</h1>
     </div>
     <form id="registrationForm" class="form-horizontal">
 
-      <!--FIRST SECTION-->
-      <div class="form-section">
-        <div class="form-group">
-            <label class="col-xs-3 control-label">Full name *</label>
-            <div class="col-xs-5">
-                <input type="text" class="form-control" name="firstName" placeholder="First name"
-                data-parsley-pattern="^([a-zA-Z\s]{2,})$" data-parsley-pattern-message="Please enter atleast 2 characters!"
-                required=""/>
-            </div>
+        <!--FIRST SECTION-->
+        <div class="form-section">
+            <div class='col-xs-9 col-xs-offset-1'>
+                <div class="form-group">
+                    <label class="col-xs-3 control-label">Full name<span style="color: red;">*</span></label>
+                    <div class="col-xs-4">
+                        <input type="text" class="form-control" name="firstName" placeholder="First name" data-parsley-pattern="^([a-zA-Z\s]{2,})$" data-parsley-pattern-message="Please enter atleast 2 characters!" required="" />
+                    </div>
 
-        </div>
-        <div class="form-group">
-            <label class="col-xs-3 control-label"></label>
-            <div class="col-xs-5">
-                <input type="text" class="form-control" name="lastName" placeholder="Last name"
-                data-parsley-pattern="^([a-zA-Z\s]{2,})$" data-parsley-pattern-message="Please enter atleast 2 characters!"
-                required=""/>
-            </div>
-        </div>
-        <br>
-        <div class="form-group">
-            <label class="col-xs-3 control-label">Personal ID *</label>
-            <div class="col-xs-5">
-                <input type="text" class="form-control" name="username" required=""/>
-            </div>
-        </div>
-
-        <div class="form-group">
-            <label class="col-xs-3 control-label">Address *</label>
-            <div class="col-xs-5">
-                <input type="text" class="form-control" name="password" required=""/>
-            </div>
-        </div>
-
-        <div class="form-group">
-            <label class="col-xs-3 control-label">Phone number *</label>
-            <div class="col-xs-3">
-                <input type="text" id="phone" class="form-control" placeholder="+372 123456"
-                data-parsley-pattern-message="Please enter a valid Estonian phone number!"
-                 data-parsley-pattern="^\+372\ [0-9]{7,8}$" required=""/>
-
-            </div>
-        </div>
-
-        <div class="form-group">
-            <label class="col-xs-3 control-label">Gender</label>
-            <div class="col-xs-5">
-                <div class="radio">
-                    <label>
-                        <input type="radio" name="gender" value="male" /> Male
-                    </label>
                 </div>
-                <div class="radio">
-                    <label>
-                        <input type="radio" name="gender" value="female" /> Female
-                    </label>
+                <div class="form-group">
+                    <label class="col-xs-3 control-label"></label>
+                    <div class="col-xs-4">
+                        <input type="text" class="form-control" name="lastName" placeholder="Last name" data-parsley-pattern="^([a-zA-Z\s]{2,})$" data-parsley-pattern-message="Please enter atleast 2 characters!" required="" />
+                    </div>
+                </div>
+                <br>
+                <div class="form-group">
+                    <label class="col-xs-3 control-label">Personal ID<span style="color: red;">*</span></label>
+                    <div class="col-xs-5">
+                        <input type="text" class="form-control" name="username" required="" />
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="col-xs-3 control-label">Address<span style="color: red;">*</span></label>
+                    <div class="col-xs-5">
+                        <input type="text" class="form-control" name="password" required="" />
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="col-xs-3 control-label">Phone number<span style="color: red;">*</span></label>
+                    <div class="col-xs-4">
+                        <input type="text" id="phone" class="form-control" placeholder="+372 123456" data-parsley-pattern-message="Please enter a valid phone number!" data-parsley-pattern="^[0-9]{7,8}$" required="" />
+
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="col-xs-3 control-label">Email address<span style="color: red;">*</span></label>
+                    <div class="col-xs-4">
+                        <input class="form-control" name="email" required="" type="email" />
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="col-xs-3 control-label">Gender</label>
+                    <div class="col-xs-4">
+                        <div class="radio">
+                            <label>
+                                <input type="radio" name="gender" value="male" /> Male
+                            </label>
+                        </div>
+                        <div class="radio">
+                            <label>
+                                <input type="radio" name="gender" value="female" /> Female
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="col-xs-3 control-label">Date of birth<span style="color: red;">*</span></label>
+                    <div class="col-xs-3">
+                        <input type="text" data-provide="datepicker" data-date-format="dd/mm/yyyy" class="form-control" name="birthday" placeholder="DD/MM/YYYY"
+                               data-parsley-pattern="^(((0[1-9]|1[0-9]|2[0-8])[\/](0[1-9]|1[012]))|((29|30|31)[\/](0[13578]|1[02]))|((29|30)[\/](0[4,6,9]|11)))[\/](19|[2-9][0-9])\d\d$|^29[\/]02[\/](19|[2-9][0-9])(00|04|08|12|16|20|24|28|32|36|40|44|48|52|56|60|64|68|72|76|80|84|88|92|96)$" data-parsley-required-message="Please fill date like in example" required="" />
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="dropdown">
+                        <label class="col-xs-3 control-label">Сitizenship</label>
+                        <div class="col-xs-4">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" data-toggle="dropdown">Choose here...
+                                <span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Estonian</a></li>
+                                <li><a href="#">Russian</a></li>
+                                <li><a href="#">Other</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!--SECOND SECTION-->
+        <div class="form-section hidden">
+            <div class='col-xs-9 col-xs-offset-1'>
+            <div class="form-group">
+
+                <label class="col-xs-3 control-label">Date of incident<span style="color: red;">*</span></label>
+                <div class="col-xs-9">
+                    <div class='input-group date' id='datetimepicker1'>
+                        <input type='text' data-provide="datepicker" data-date-format="dd/mm/yyyy" class="form-control" placeholder="DD/MM/YYYY" data-parsley-pattern="^(((0[1-9]|1[0-9]|2[0-8])[\/](0[1-9]|1[012]))|((29|30|31)[\/](0[13578]|1[02]))|((29|30)[\/](0[4,6,9]|11)))[\/](19|[2-9][0-9])\d\d$|^29[\/]02[\/](19|[2-9][0-9])(00|04|08|12|16|20|24|28|32|36|40|44|48|52|56|60|64|68|72|76|80|84|88|92|96)$" data-parsley-required-message="Please fill date like in example (DD/MM/YYYY)" required="" />
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <div class="form-group">
-            <label class="col-xs-3 control-label">Date of birth *</label>
-            <div class="col-xs-3">
-                <input type="text" data-provide="datepicker" data-date-format="dd/mm/yyyy" class="form-control" name="birthday" placeholder="DD/MM/YYYY" data-parsley-pattern="^(((0[1-9]|1[0-9]|2[0-8])[\/](0[1-9]|1[012]))|((29|30|31)[\/](0[13578]|1[02]))|((29|30)[\/](0[4,6,9]|11)))[\/](19|[2-9][0-9])\d\d$|^29[\/]02[\/](19|[2-9][0-9])(00|04|08|12|16|20|24|28|32|36|40|44|48|52|56|60|64|68|72|76|80|84|88|92|96)$" data-parsley-required-message="Please fill date like in example (DD/MM/YYYY) "
-                required=""/>
-            </div>
-        </div>
-
-        <div class="form-group">
-            <div class="dropdown">
-                <label class="col-xs-3 control-label">Сitizenship</label>
-                <div class="col-xs-5">
-                    <button class="btn btn-secondary dropdown-toggle" type="button" data-toggle="dropdown">Choose here...
-                        <span class="caret"></span>
-                    </button>
-                    <ul class="dropdown-menu">
-                        <li><a href="#">Estonian</a></li>
-                        <li><a href="#">Russian</a></li>
-                        <li><a href="#">Other</a></li>
-                    </ul>
+            <div class="form-group clockpicker">
+                <label class="col-xs-3 control-label">Time of incident</label>
+                <div class="col-xs-9">
+                    <input type="text" class="form-control" value="09:30" data-parsley-pattern="^(0[0-9]|1[0-9]|2[0-3])\:(0[0-9]|[10]|(1[1-9]|[2-5][0-9]))$" required="" />
                 </div>
             </div>
-        </div>
 
-        <div class="form-group">
-            <label class="col-xs-3 control-label">Email address *</label>
-            <div class="col-xs-5">
-                <input class="form-control" name="email" required="" type="email"/>
+            <div class="form-group">
+                <label class="col-xs-3 control-label">Address<span style="color: red;">*</span></label>
+                <div class="col-xs-9">
+                    <input type="text" class="form-control" required="" />
+                </div>
             </div>
-        </div>
-      </div>
 
-      <!--SECOND SECTION-->
-      <div class="form-section hidden">
-        <div class="form-group">
-
-          <label class="col-xs-3 control-label">Date of incident *</label>
-          <div class="col-xs-5">
-              <div class='input-group date' id='datetimepicker1'>
-                  <input type='text' data-provide="datepicker" data-date-format="dd/mm/yyyy" class="form-control" placeholder="DD/MM/YYYY" data-parsley-pattern="^(((0[1-9]|1[0-9]|2[0-8])[\/](0[1-9]|1[012]))|((29|30|31)[\/](0[13578]|1[02]))|((29|30)[\/](0[4,6,9]|11)))[\/](19|[2-9][0-9])\d\d$|^29[\/]02[\/](19|[2-9][0-9])(00|04|08|12|16|20|24|28|32|36|40|44|48|52|56|60|64|68|72|76|80|84|88|92|96)$" data-parsley-required-message="Please fill date like in example (DD/MM/YYYY)" required=""/>
-              </div>
-          </div>
-        </div>
-
-        <!--<script type="text/javascript">
-            $(function() {
-                $('#datetimepicker1').datetimepicker({
-                    language: 'en'
-                });
-            });
-
-        </script>-->
-
-        <div class="form-group clockpicker">
-            <label class="col-xs-3 control-label">Time of incident</label>
-            <div class="col-xs-5">
-                <input type="text" class="form-control" value="09:30"
-                data-parsley-pattern="^(0[0-9]|1[0-9]|2[0-3])\:(0[0-9]|[10]|(1[1-9]|[2-5][0-9]))$"
-                required=""/>
-            </div>
-        </div>
-
-        <div class="form-group">
-            <label class="col-xs-3 control-label">Address</label>
-            <div class="col-xs-5">
-                <input type="text" class="form-control" required=""/>
-            </div>
-        </div>
-
-        <div class="form-group">
-            <div class="dropdown">
-                <label class="col-xs-3 control-label">File</label>
-                <div class="col-xs-5">
-                  <input type="file"></input>
-                    <!--<button class="btn btn-secondary dropdown-toggle" type="button" data-toggle="dropdown">File...
+            <div class="form-group file">
+                <div class="dropdown">
+                    <label class="col-xs-3 control-label">File</label>
+                    <div class="col-xs-6">
+                        <input type="file"></input>
+                        <!--<button class="btn btn-secondary dropdown-toggle" type="button" data-toggle="dropdown">File...
                     </button>-->
+                    </div>
                 </div>
+            </div>
+
+            <div class="form-group">
+                <label for="comment" class="col-xs-3 control-label">Describe your claim*</label>
+                <div class="col-xs-9">
+                    <textarea class="form-control" rows="5" id="comment" required=""></textarea>
+                </div>
+
+            </div>
             </div>
         </div>
 
-        <div class="form-group">
-            <label for="comment" class="col-xs-3 control-label">Describe your claim *</label>
-            <div class="col-xs-6">
-                <textarea class="form-control" rows="5" id="comment" required=""></textarea>
+        <div class="form-navigation">
+            <div class="col-xs-8 col-xs-offset-4">
+                <!--            <lable class='col-xs-3 control-label'></lable>-->
+                <button type="button" class="previous btn btn-info">&lt; Previous</button>
+                <button type="button" class="next btn btn-info">Next &gt;</button>
+                <input class="btn btn-default" type="submit">
+                <span class="clearfix"></span>
             </div>
-
-          </div>
-      </div>
-
-      <div class="form-navigation">
-       <lable class='col-xs-3 control-label'></lable>
-        <button type="button" class="previous btn btn-info">&lt; Previous</button>
-        <button type="button" class="next btn btn-info">Next &gt;</button>
-        <input class="btn btn-default" type="submit">
-        <span class="clearfix"></span>
-      </div>
+        </div>
 
     </form>
 
     <script type="text/javascript">
-    $('.clockpicker').clockpicker({
-      donetext: 'Choose',
-      placement: 'middle'
-      });
+        $('.clockpicker').clockpicker({
+            donetext: 'Choose',
+            placement: 'middle'
+        });
 
-      //[1-6]{1}[0-9]{2}(0+[1-9]|1[012])(0+[1-9]|[10-31])
+        //[1-6]{1}[0-9]{2}(0+[1-9]|1[012])(0+[1-9]|[10-31])
+
     </script>
 
     <script>
@@ -210,46 +201,48 @@
         //            }
         //        });
 
-        $(function () {
-          var $sections = $('.form-section');
+        $(function() {
+            var $sections = $('.form-section');
 
-          function navigateTo(index) {
+            function navigateTo(index) {
 
-            // Mark the current section with the class 'current'
-            $sections
-              .removeClass('current')
-              .addClass('hidden')
-              .eq(index)
-                .addClass('current')
-                .removeClass('hidden');
-            // Show only the navigation buttons that make sense for the current section:
-            $('.form-navigation .previous').toggle(index > 0);
-            var atTheEnd = index >= $sections.length - 1;
-            $('.form-navigation .next').toggle(!atTheEnd);
-            $('.form-navigation [type=submit]').toggle(atTheEnd);
-          }
+                // Mark the current section with the class 'current'
+                $sections
+                    .removeClass('current')
+                    .addClass('hidden')
+                    .eq(index)
+                    .addClass('current')
+                    .removeClass('hidden');
+                // Show only the navigation buttons that make sense for the current section:
+                $('.form-navigation .previous').toggle(index > 0);
+                var atTheEnd = index >= $sections.length - 1;
+                $('.form-navigation .next').toggle(!atTheEnd);
+                $('.form-navigation [type=submit]').toggle(atTheEnd);
+            }
 
-          function curIndex() {
-            // Return the current index by looking at which section has the class 'current'
-            return $sections.index($sections.filter('.current'));
-          }
+            function curIndex() {
+                // Return the current index by looking at which section has the class 'current'
+                return $sections.index($sections.filter('.current'));
+            }
 
-          // Previous button is easy, just go back
-          $('.form-navigation .previous').click(function() {
-            navigateTo(curIndex() - 1);
-          });
+            // Previous button is easy, just go back
+            $('.form-navigation .previous').click(function() {
+                navigateTo(curIndex() - 1);
+            });
 
-          // Next button goes forward iff current block validates
-          $('.form-navigation .next').click(function() {
-            if ($('#registrationForm').parsley().validate({group: 'block-' + curIndex()}))
-              navigateTo(curIndex() + 1);
-          });
+            // Next button goes forward iff current block validates
+            $('.form-navigation .next').click(function() {
+                if ($('#registrationForm').parsley().validate({
+                        group: 'block-' + curIndex()
+                    }))
+                    navigateTo(curIndex() + 1);
+            });
 
-          // Prepare sections by setting the `data-parsley-group` attribute to 'block-0', 'block-1', etc.
-          $sections.each(function(index, section) {
-            $(section).find(':input').attr('data-parsley-group', 'block-' + index);
-          });
-          navigateTo(0); // Start at the beginning
+            // Prepare sections by setting the `data-parsley-group` attribute to 'block-0', 'block-1', etc.
+            $sections.each(function(index, section) {
+                $(section).find(':input').attr('data-parsley-group', 'block-' + index);
+            });
+            navigateTo(0); // Start at the beginning
         });
 
 
@@ -267,7 +260,7 @@
         $(function() {
 
             $(".dropdown-menu").on('click', 'li a', function() {
-                $(".btn:first-child").text($(this).text());
+                $(".dropdown-toggle:first-child").text($(this).text());
                 $(".btn:first-child").val($(this).text());
             });
 
